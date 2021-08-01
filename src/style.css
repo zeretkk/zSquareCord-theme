@@ -257,7 +257,6 @@ body::after {
 }
 .mask-1l8v16>foreignObject, .avatarHint-2A3RNb>foreignObject, .mask-1l8v16>rect{
     mask: none;
-    /*clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 72% 65%, 64% 73%, 64% 100%, 0% 100%);*/
 }
 .avatar-37jOim{
     border:none;
@@ -297,4 +296,7 @@ body::after {
     margin-top: 5px;
     border: 1px solid rgb(var(--transparencycolor));
     width: 33%;
+}
+.slider-TkfMQL>rect, .bd-switch-handle{
+    rx:0;
 }
