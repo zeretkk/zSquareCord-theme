@@ -292,7 +292,7 @@ body::after {
     justify-content: center;
     width: 100%;
 }
-.horizontal-1ae9ci>button{
+.horizontal-1ae9ci:not(.close-hZ94c6)>button{
     margin-top: 5px;
     border: 1px solid rgb(var(--transparencycolor));
     width: 33%;
