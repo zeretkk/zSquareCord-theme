@@ -27,7 +27,7 @@
     --textdarker:                   125,125,125;
     --textdarkest:                  90,90,90;
 
-    --background:                   url(https://z-sector.icu/ds/introback.png);
+    --background:                   url(https://zeretkk.github.io/zSquareCord-theme/src/bg.jpg);
     --backgroundposition:           center;
     --backgroundsize:               cover;
     --backgroundblur:               unset;
@@ -252,6 +252,13 @@ body::after {
     border: 1px solid currentColor;
     left: 0;
     bottom: 0;
+}
+.member-3-YXUe{
+    background-color: rgba(0,0,0,0.4);
+    margin: 2px 0;
+}
+.name-uJV0GL{
+    font-weight: 600;
 }
 .activityText-yGKsKm{
     color:#fff;
