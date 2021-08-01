@@ -1,0 +1,305 @@
+:root {
+    --transparencycolor:			0,0,0;
+    --transparencyalpha:			0.15;
+    --messagetransparency:			0.5;
+    --usechatbubbles: 				calc(var(--messagetransparency) / (var(--messagetransparency) + 0.00000000000000000000001));
+    --guildchanneltransparency:		0.15;
+    --chatinputtransparency:		0.0;
+    --memberlisttransparency:		0.0;
+
+    --font:							Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --textshadow:					transparent;
+
+    --accentcolor:					190,78,180;
+    --accentcolor2:					var(--accentcolor);
+    --mentioncolor:					var(--accentcolor);
+    --linkcolor:					var(--accentcolor);
+
+    --successcolor: 				59,165,92;
+    --warningcolor: 				250,166,26;
+    --dangercolor: 					237,66,69;
+
+    --textbrightest: 				255,255,255;
+    --textbrighter: 				222,222,222;
+    --textbright: 					200,200,200;
+    --textdark: 					160,160,160;
+    --textdarker: 					125,125,125;
+    --textdarkest: 					90,90,90;
+
+    --background:					url(https://z-sector.icu/ds/introback.png);
+    --backgroundposition:			center;
+    --backgroundsize:				cover;
+    --backgroundblur:				unset;
+
+    --popout:						var(--background);
+    --popoutposition:				var(--backgroundposition);
+    --popoutsize:					var(--backgroundsize);
+    --popoutblur:					var(--backgroundblur);
+
+    --backdrop:						rgba(0,0,0,0.85);
+    --backdropposition:				center;
+    --backdropsize:					cover;
+    --backdropblur:					unset;
+
+    --bdfdb-green:					rgb(var(--successcolor));
+    --bdfdb-yellow:					rgb(var(--warningcolor));
+    --bdfdb-red:					rgb(var(--dangercolor));
+}
+
+.theme-light, .theme-dark {
+    --text-positive: rgb(var(--successcolor));
+    --text-warning: rgb(var(--warningcolor));
+    --text-danger: rgb(var(--dangercolor));
+    --info-positive-background: rgba(var(--successcolor),.1);
+    --info-positive-foreground: rgb(var(--successcolor));
+    --info-positive-text: #fff;
+    --info-warning-background: rgba(var(--warningcolor),.1);
+    --info-warning-foreground: rgb(var(--warningcolor));
+    --info-warning-text: #fff;
+    --info-danger-background: rgba(var(--dangercolor),.1);
+    --info-danger-foreground: rgb(var(--dangercolor));
+    --info-danger-text: #fff;
+    --status-positive-background: rgb(var(--successcolor));
+    --status-positive-text: #fff;
+    --status-warning-background: rgb(var(--warningcolor));
+    --status-warning-text: #fff;
+    --status-danger-background: rgb(var(--dangercolor));
+    --status-danger-text: #fff;
+    --header-primary: rgb(var(--textbrightest));
+    --header-secondary: rgb(var(--textbright));
+    --text-normal: rgb(var(--textbrighter));
+    --text-muted: rgb(var(--textdarker));
+    --channels-default: rgb(var(--textdark));
+    --interactive-normal: rgb(var(--textbright));
+    --interactive-hover: rgb(var(--textbrighter));
+    --interactive-active: rgb(var(--textbrightest));
+    --interactive-muted: rgb(var(--textdarkest));
+    --logo-primary: rgb(var(--textbrightest));
+    --background-accent: rgba(var(--transparencycolor), .1);
+    --background-primary: rgba(var(--transparencycolor), .2);
+    --background-secondary: rgba(var(--transparencycolor), .3);
+    --background-secondary-alt: rgba(var(--transparencycolor), .35);
+    --background-tertiary: rgba(var(--transparencycolor), .4);
+    --background-floating: rgba(var(--transparencycolor), .5);
+    --background-modifier-accent: rgba(var(--textbrightest),.1);
+    --elevation-low: 0 1px 5px 0 rgba(var(--transparencycolor), .3);
+    --elevation-high: 0 2px 10px 0 rgba(var(--transparencycolor), .3);
+    --font-primary: var(--font) !important;
+    --font-display: var(--font) !important;
+}
+
+
+
+
+
+.wordmarkWindows-1v0lYD>svg{
+    display: none;
+}
+
+
+body,														/* body														*/
+#app-mount .app-1q1i1E,										/* app					container							*/
+#app-mount .app-2rEoOp,										/* app					inner								*/
+#app-mount .loading-Ags1CY,									/* app					i18n loading						*/
+#app-mount .wrapper-1prNyd,									/* app					errorscreen							*/
+#app-mount .bg-h5JY_x,										/* app					background							*/
+#app-mount .layer-3QrUeG,									/* layer				container							*/
+#app-mount .container-3w7J-x,								/* channels				inner								*/
+#app-mount .privateChannels-1nO12o,							/* dmchannels												*/
+#app-mount .panels-j1Uci_ > *,								/* account/voice		inner								*/
+#app-mount .chat-3bRxxu,									/* chat					container							*/
+#app-mount .threadSidebar-1o3BTy,							/* chat					thread sidebar						*/
+#app-mount .wrapper-3vR61M,									/* chat					messages loading					*/
+#app-mount .noChannel-Z1DQK7,								/* nochannel												*/
+#app-mount .members-1998pB,									/* members													*/
+#app-mount .members-1998pB > div,							/* members				content								*/
+#app-mount .content-MLh4nU,									/* unavailable												*/
+#app-mount .container-1D34oG,								/* peoples													*/
+#app-mount .container-lRFx4q,								/* peoples				activity list						*/
+#app-mount .applicationStore-1pNvnv,						/* nitro													*/
+#app-mount .pageWrapper-1PgVDX,								/* guilddiscovery											*/
+#app-mount .scrollerBase-289Jih,							/* scroller													*/
+#app-mount .scroller-2FKFPG,								/* scroller old												*/
+#app-mount .standardSidebarView-3F1I7i,						/* settings													*/
+#app-mount .contentRegion-3nDuYy {							/* settings				content								*/
+    background: transparent;
+}
+
+
+
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+body::before {
+    background: var(--background) var(--backgroundposition)/var(--backgroundsize);
+}
+body::after {
+    backdrop-filter: blur(var(--backgroundblur));
+}
+.container-16j22k::before,
+.layer-3QrUeG ~ .layer-3QrUeG::before,
+.root-3R2ngo::before,
+.container-16j22k::after,
+.layer-3QrUeG ~ .layer-3QrUeG::after,
+.root-3R2ngo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+.container-16j22k::before,
+.layer-3QrUeG ~ .layer-3QrUeG::before,
+.root-3R2ngo::before {
+    background: var(--background) var(--backgroundposition)/var(--backgroundsize);
+    background-attachment: fixed;
+}
+.container-16j22k::after,
+.layer-3QrUeG ~ .layer-3QrUeG::after,
+.root-3R2ngo::after {
+    background-color: rgba(var(--transparencycolor), var(--transparencyalpha));
+    backdrop-filter: blur(var(--backgroundblur));
+}
+.uploadArea-3QgLtW,
+.backdrop-29yll0,
+.backdrop-1wrmKB {
+    background: transparent !important;
+    opacity: 1 !important;
+    animation: none !important;
+}
+.uploadArea-3QgLtW::before,
+.backdrop-29yll0::before,
+.backdrop-1wrmKB::before,
+.uploadArea-3QgLtW::after,
+.backdrop-29yll0::after,
+.backdrop-1wrmKB::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -2;
+}
+.uploadArea-3QgLtW::before,
+.backdrop-29yll0::before,
+.backdrop-1wrmKB::before {
+    background: var(--backdrop) var(--backdropposition)/var(--backdropsize);
+    background-attachment: fixed;
+}
+.uploadArea-3QgLtW::after,
+.backdrop-29yll0::after,
+.backdrop-1wrmKB::after {
+    backdrop-filter: blur(var(--backdropblur));
+}
+.withLayer-RoELSG {
+    z-index: -1;
+}
+
+
+
+
+
+
+.titleBar-AC4pGV:not(.typeMacOS-3EmCyP)::after {
+    content: "squarecord";
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: rgb(102, 255, 103);
+    display: block;
+    height: 16px;
+    width: fit-content;
+    pointer-events: none;
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.titleBar-AC4pGV:not(.typeMacOS-3EmCyP){
+    margin: 0;
+    padding: 5px 0;
+    background-color: rgba(0, 0, 0, .50) !important;
+}
+.winButton-iRh8-Z{
+    /*margin-top: 2px;*/
+}
+.membersGroup-v9BXpm{
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding: 0 0 5px 0;
+    margin: 25px 5px 0;
+    height: auto;
+}
+.membersGroup-v9BXpm:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    left: 0;
+    bottom: 0;
+}
+.avatarHint-2A3RNb{
+    top:0;
+    left:0;
+}
+.mask-1l8v16>foreignObject, .avatarHint-2A3RNb>foreignObject, .mask-1l8v16>rect{
+    mask: none;
+    /*clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 72% 65%, 64% 73%, 64% 100%, 0% 100%);*/
+}
+.avatar-37jOim{
+    border:none;
+}
+.userPopout-xaxa6l{
+    border-radius: 0;
+}
+.role-2irmRk{
+    border-radius: 0;
+}
+.wrapperSimple-19ogV2, .folderIconWrapper-1_bOZe, .iconInactive-98JN5i, .sidebar-2K8pFh, *{
+    border-radius: 0 !important;
+}
+.svg-1X37T1>defs>path{
+    d: path("M0,0 L 0,48 L48,48, L48,0 Z")
+}
+.listItem-GuPuDH{
+    /*padding: ;*/
+}
+.nameTag-3uD-yy{
+    text-align: center;
+}
+.usernameContainer-1fp4nu>div{
+    width: 100%;
+    text-align: center;
+}
+.container-3baos1{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px 10px 20px 10px;
+}
+.horizontal-1ae9ci{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.horizontal-1ae9ci>button{
+    margin-top: 5px;
+    border: 1px solid rgb(var(--transparencycolor));
+    width: 33%;
+}
