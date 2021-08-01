@@ -119,7 +119,7 @@ body,                                                       /* body             
 #app-mount .container-lRFx4q,                               /* peoples              activity list                       */
 #app-mount .applicationStore-1pNvnv,                        /* nitro                                                    */
 #app-mount .pageWrapper-1PgVDX,                             /* guilddiscovery                                           */
-#app-mount .scrollerBase-289Jih,                            /* scroller                                                 */
+/*#app-mount .scrollerBase-289Jih,       */                     /* scroller                                                 */
 #app-mount .scroller-2FKFPG,                                /* scroller old                                             */
 #app-mount .standardSidebarView-3F1I7i,                     /* settings                                                 */
 #app-mount .contentRegion-3nDuYy {                          /* settings             content                             */
@@ -306,5 +306,5 @@ body::after {
     rx:0;
 }
 .timestamp-3ZCmNB, .content-1o0f9g{
-    color:#fff
+    color:#fff !important;
 }
