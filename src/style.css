@@ -280,19 +280,19 @@ body::after {
     width: 100%;
     text-align: center;
 }
-.container-3baos1{
+.container-3baos1:not(.separator-2-RRj_){
     justify-content: center;
     flex-wrap: wrap;
     padding: 5px 10px 20px 10px;
 }
-.horizontal-1ae9ci{
+.horizontal-1ae9ci:not(.separator-2-RRj_){
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
-.horizontal-1ae9ci:not(.close-hZ94c6)>button{
+.horizontal-1ae9ci:not(.close-hZ94c6):not(.header-1TKi98)>button{
     margin-top: 5px;
     border: 1px solid rgb(var(--transparencycolor));
     width: 33%;
