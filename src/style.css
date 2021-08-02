@@ -1,50 +1,14 @@
 :root {
-    --brand-experiment: rgb(76, 187, 77);
-    --transparencycolor:            0,0,0;
-    --transparencyalpha:            0.15;
-    --messagetransparency:          0.5;
-    --usechatbubbles:               calc(var(--messagetransparency) / (var(--messagetransparency) + 0.00000000000000000000001));
-    --guildchanneltransparency:     0.15;
-    --chatinputtransparency:        0.0;
-    --memberlisttransparency:       0.0;
-
-    --font:                         Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
-    --textshadow:                   transparent;
-
-    --accentcolor:                  190,78,180;
-    --accentcolor2:                 var(--accentcolor);
-    --mentioncolor:                 var(--accentcolor);
-    --linkcolor:                    var(--accentcolor);
-
-    --successcolor:                 59,165,92;
-    --warningcolor:                 250,166,26;
-    --dangercolor:                  237,66,69;
-
-    --textbrightest:                255,255,255;
-    --textbrighter:                 222,222,222;
+    --brand-experiment: rgb(114, 137, 218);
+    /* --accentcolor:190,78,180; */
+    --font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --background: url("https://zeretkk.github.io/zSquareCord-theme/src/bg.jpg");
+    --bg-subcolor: 15,15,15
+    --chat-transp: 1;
+    --sides-transp: .7;
+    --sides-blur: 5px;
     --textbright:                   200,200,200;
-    --textdark:                     160,160,160;
-    --textdarker:                   125,125,125;
-    --textdarkest:                  90,90,90;
-
-    --background:                   url(https://zeretkk.github.io/zSquareCord-theme/src/bg.jpg);
-    --backgroundposition:           center;
-    --backgroundsize:               cover;
-    --backgroundblur:               unset;
-
-    --popout:                       var(--background);
-    --popoutposition:               var(--backgroundposition);
-    --popoutsize:                   var(--backgroundsize);
-    --popoutblur:                   var(--backgroundblur);
-
-    --backdrop:                     rgba(0,0,0,0.85);
-    --backdropposition:             center;
-    --backdropsize:                 cover;
-    --backdropblur:                 unset;
-
-    --bdfdb-green:                  rgb(var(--successcolor));
-    --bdfdb-yellow:                 rgb(var(--warningcolor));
-    --bdfdb-red:                    rgb(var(--dangercolor));
+    
 }
 
 .theme-light, .theme-dark {
@@ -71,6 +35,7 @@
     --text-normal: rgb(var(--textbrighter));
     --text-muted: rgb(var(--textdarker));
     --channels-default: rgb(var(--textdark));
+    --channeltextarea-background:rgba(64, 68, 75, .3);
     --interactive-normal: rgb(var(--textbright));
     --interactive-hover: rgb(var(--textbrighter));
     --interactive-active: rgb(var(--textbrightest));
@@ -83,6 +48,148 @@
     --background-tertiary: rgba(var(--transparencycolor), .4);
     --background-floating: rgba(var(--transparencycolor), .5);
     --background-modifier-accent: rgba(var(--textbrightest),.1);
+    --background-modifier-selected: rgba(114, 137, 218, 0.459);
+    --elevation-low: 0 1px 5px 0 rgba(var(--transparencycolor), .3);
+    --elevation-high: 0 2px 10px 0 rgba(var(--transparencycolor), .3);
+    --font-primary: var(--font) !important;
+    --font-display: var(--font) !important;
+}
+
+#app-mount .container-1D34oG,
+.app-2rEoOp,
+.bg-h5JY_x,
+.chat-3bRxxu,
+.content-1o0f9g,
+.contentRegionScroller-26nc1e,
+.layer-3QrUeG,
+.members-1998pB > div,
+.scroller-1JbKMe,
+.applicationStore-1pNvnv,
+.scroller-305q3I,
+.sidebar-2K8pFh,
+.standardSidebarView-3F1I7i,
+.wrapper-1F5TKx,
+.wrapper-3NnKdC,
+.wrapper-3vR61M,
+body {
+    background: 0 0;
+}
+.container-3w7J-x,
+.members-1998pB,
+.nowPlayingColumn-2sl4cE,
+.privateChannels-1nO12o,
+.sidebar-2K8pFh > .scrollerBase-289Jih,
+.sidebarRegionScroller-3MXcoP {
+    background: rgba(47, 49, 54, var(--sides-transp));
+}
+.panels-j1Uci_ {
+    background: rgba(41, 43, 47, var(--sides-transp));
+}
+.scroller-1Bvpku,
+.withFrame-haYltI {
+    background: rgba(32, 34, 37, var(--sides-transp));
+}
+.scroller-9moviB,
+#app-mount .pageWrapper-1PgVDX,
+.chatContent-a9vAAp,
+.contentRegion-3nDuYy,
+.header-2mZ9Ov::after,
+.peopleColumn-29fq28,
+.stickyHeader-hH_ZLl::after,
+.titleContainer-2CXtJo::after {
+    background: rgba(54, 57, 63, var(--chat-transp));
+}
+.container-1r6BKw.themed-ANHk51 {
+    background: rgba(54, 57, 63, var(--sides-transp));
+}
+.container-1r6BKw.themed-ANHk51,
+.members-1998pB,
+.nowPlayingColumn-2sl4cE,
+.scroller-1Bvpku,
+.sidebar-2K8pFh,
+.sidebarRegionScroller-3MXcoP,
+.withFrame-haYltI {
+    backdrop-filter: blur(var(--sides-blur));
+}
+#app-mount .children-19S4PO:after,
+#app-mount .form-2fGMdU:before {
+    display: none;
+}
+.appMount-3lHmkl {
+    background: var(--background) center/cover no-repeat;
+}
+.withFrame-haYltI {
+    padding-top: 4px;
+    margin-top: 0;
+}
+#app-mount .sidebar-2K8pFh {
+    border-radius: 0;
+}
+.content-1o0f9g {
+    backdrop-filter: blur(5px);
+}
+.header-2mZ9Ov::before,
+.stickyHeader-hH_ZLl::before,
+.titleContainer-2CXtJo::before {
+    background: var(--background) center/cover fixed;
+}
+.header-2mZ9Ov::after,
+.header-2mZ9Ov::before,
+.stickyHeader-hH_ZLl::after,
+.stickyHeader-hH_ZLl::before,
+.titleContainer-2CXtJo::after,
+.titleContainer-2CXtJo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+*{
+    color: #fff;
+}
+
+.theme-light, .theme-dark {
+    --text-positive: rgb(var(--successcolor));
+    --text-warning: rgb(var(--warningcolor));
+    --text-danger: rgb(var(--dangercolor));
+    --info-positive-background: rgba(var(--successcolor),.1);
+    --info-positive-foreground: rgb(var(--successcolor));
+    --info-positive-text: #fff;
+    --info-warning-background: rgba(var(--warningcolor),.1);
+    --info-warning-foreground: rgb(var(--warningcolor));
+    --info-warning-text: #fff;
+    --info-danger-background: rgba(var(--dangercolor),.1);
+    --info-danger-foreground: rgb(var(--dangercolor));
+    --info-danger-text: #fff;
+    --status-positive-background: rgb(var(--successcolor));
+    --status-positive-text: #fff;
+    --status-warning-background: rgb(var(--warningcolor));
+    --status-warning-text: #fff;
+    --status-danger-background: rgb(var(--dangercolor));
+    --status-danger-text: #fff;
+    --header-primary: rgb(var(--textbrightest));
+    --header-secondary: rgb(var(--textbright));
+    --text-normal: rgb(var(--textbrighter));
+    --text-muted: rgb(var(--textdarker));
+    --channels-default: rgb(var(--textdark));
+    --channeltextarea-background:rgba(64, 68, 75, .3);
+    --interactive-normal: rgb(var(--textbright));
+    --interactive-hover: rgb(var(--textbrighter));
+    --interactive-active: rgb(var(--textbrightest));
+    --interactive-muted: rgb(var(--textdarkest));
+    --logo-primary: rgb(var(--textbrightest));
+    --background-accent: rgba(var(--transparencycolor), .1);
+    --background-primary: rgba(var(--transparencycolor), .2);
+    --background-secondary: rgba(var(--transparencycolor), .3);
+    --background-secondary-alt: rgba(var(--transparencycolor), .35);
+    --background-tertiary: rgba(var(--transparencycolor), .4);
+    --background-floating: rgba(var(--transparencycolor), .5);
+    --background-modifier-accent: rgba(var(--textbrightest),.1);
+    --background-modifier-selected: rgba(114, 137, 218, 0.459);
     --elevation-low: 0 1px 5px 0 rgba(var(--transparencycolor), .3);
     --elevation-high: 0 2px 10px 0 rgba(var(--transparencycolor), .3);
     --font-primary: var(--font) !important;
@@ -96,131 +203,12 @@
 .wordmarkWindows-1v0lYD>svg{
     display: none;
 }
-
-
-body,                                                       /* body                                                     */
-#app-mount .app-1q1i1E,                                     /* app                  container                           */
-#app-mount .app-2rEoOp,                                     /* app                  inner                               */
-#app-mount .loading-Ags1CY,                                 /* app                  i18n loading                        */
-#app-mount .wrapper-1prNyd,                                 /* app                  errorscreen                         */
-#app-mount .bg-h5JY_x,                                      /* app                  background                          */
-#app-mount .layer-3QrUeG,                                   /* layer                container                           */
-#app-mount .container-3w7J-x,                               /* channels             inner                               */
-#app-mount .privateChannels-1nO12o,                         /* dmchannels                                               */
-#app-mount .panels-j1Uci_ > *,                              /* account/voice        inner                               */
-#app-mount .chat-3bRxxu,                                    /* chat                 container                           */
-#app-mount .threadSidebar-1o3BTy,                           /* chat                 thread sidebar                      */
-#app-mount .wrapper-3vR61M,                                 /* chat                 messages loading                    */
-#app-mount .noChannel-Z1DQK7,                               /* nochannel                                                */
-#app-mount .members-1998pB,                                 /* members                                                  */
-#app-mount .members-1998pB > div,                           /* members              content                             */
-#app-mount .content-MLh4nU,                                 /* unavailable                                              */
-#app-mount .container-1D34oG,                               /* peoples                                                  */
-#app-mount .container-lRFx4q,                               /* peoples              activity list                       */
-#app-mount .applicationStore-1pNvnv,                        /* nitro                                                    */
-#app-mount .pageWrapper-1PgVDX,                             /* guilddiscovery                                           */
-/*#app-mount .scrollerBase-289Jih,       */                     /* scroller                                                 */
-#app-mount .scroller-2FKFPG,                                /* scroller old                                             */
-#app-mount .standardSidebarView-3F1I7i,                     /* settings                                                 */
-#app-mount .contentRegion-3nDuYy {                          /* settings             content                             */
-    background: transparent;
-}
-
-
-
-
-body::before,
-body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: -1;
-}
-body::before {
-    background: var(--background) var(--backgroundposition)/var(--backgroundsize);
-}
-body::after {
-    backdrop-filter: blur(var(--backgroundblur));
-}
-.container-16j22k::before,
-.layer-3QrUeG ~ .layer-3QrUeG::before,
-.root-3R2ngo::before,
-.container-16j22k::after,
-.layer-3QrUeG ~ .layer-3QrUeG::after,
-.root-3R2ngo::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: -1;
-}
-.container-16j22k::before,
-.layer-3QrUeG ~ .layer-3QrUeG::before,
-.root-3R2ngo::before {
-    background: var(--background) var(--backgroundposition)/var(--backgroundsize);
-    background-attachment: fixed;
-}
-.container-16j22k::after,
-.layer-3QrUeG ~ .layer-3QrUeG::after,
-.root-3R2ngo::after {
-    background-color: rgba(var(--transparencycolor), var(--transparencyalpha));
-    backdrop-filter: blur(var(--backgroundblur));
-}
-.uploadArea-3QgLtW,
-.backdrop-29yll0,
-.backdrop-1wrmKB {
-    background: transparent !important;
-    opacity: 1 !important;
-    animation: none !important;
-}
-.uploadArea-3QgLtW::before,
-.backdrop-29yll0::before,
-.backdrop-1wrmKB::before,
-.uploadArea-3QgLtW::after,
-.backdrop-29yll0::after,
-.backdrop-1wrmKB::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: -2;
-}
-.uploadArea-3QgLtW::before,
-.backdrop-29yll0::before,
-.backdrop-1wrmKB::before {
-    background: var(--backdrop) var(--backdropposition)/var(--backdropsize);
-    background-attachment: fixed;
-}
-.uploadArea-3QgLtW::after,
-.backdrop-29yll0::after,
-.backdrop-1wrmKB::after {
-    backdrop-filter: blur(var(--backdropblur));
-}
-.withLayer-RoELSG {
-    z-index: -1;
-}
-
-
-
-
-
-
 .titleBar-AC4pGV:not(.typeMacOS-3EmCyP)::after {
     content: "squarecord";
     position: absolute;
     top: 5px;
     left: 10px;
-    color: rgb(102, 255, 103);
+    color: var(--brand-experiment);
     display: block;
     height: 16px;
     width: fit-content;
@@ -248,14 +236,21 @@ body::after {
     content: '';
     width: 100%;
     height: 100%;
-    /* background-color: currentColor; */
     border: 1px solid currentColor;
     left: 0;
     bottom: 0;
 }
-.member-3-YXUe{
-    background-color: rgba(0,0,0,0.4);
-    margin: 2px 0;
+
+span.roleColor-rz2vM0::after {
+    content: "";
+    background: currentColor;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.11;
+    left: 0;
+    top: 0;
+    /* thanks l0c4lh057#9748 for this snippet */
 }
 .name-uJV0GL{
     font-weight: 600;
@@ -275,12 +270,16 @@ body::after {
 }
 .userPopout-xaxa6l{
     border-radius: 0;
+    background: rgba(54, 57, 63, calc(var(--sides-transp)+.7));
 }
 .role-2irmRk{
     border-radius: 0;
 }
 .wrapperSimple-19ogV2, .folderIconWrapper-1_bOZe, .iconInactive-98JN5i, .sidebar-2K8pFh, *{
     border-radius: 0 !important;
+}
+.svg-1X37T1>foreignObject{
+        mask: none;
 }
 .svg-1X37T1>defs>path{
     d: path("M0,0 L 0,48 L48,48, L48,0 Z")
@@ -306,7 +305,7 @@ body::after {
 }
 .horizontal-1ae9ci:not(.close-hZ94c6):not(.header-1TKi98)>button{
     margin-top: 5px;
-    border: 1px solid rgb(var(--transparencycolor));
+    border: 1px solid rgb(var(--textbright)) !important;
     width: 33%;
 }
 .slider-TkfMQL>rect, .bd-switch-handle{
@@ -315,3 +314,12 @@ body::after {
 .timestamp-3ZCmNB, .content-1o0f9g{
     color:#fff !important;
 }
+.timestamp-3ZCmNB:before{
+    content: '-';
+    padding-right: 10px;
+}
+
+.item-PXvHYJ, .header-2RyJ0Y{
+    text-align: center;
+}
+.tutorialContainer-30WoTp+div {display:none}    
