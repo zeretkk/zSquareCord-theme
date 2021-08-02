@@ -1,8 +1,8 @@
 /**
  * @name         SquareCord
- * @description  Totally square theme
+ * @description  Totally squared theme
  * @author       zeretkk
- * @version      1.0
+ * @version      1.1a
  * @donate       https://clc.to/squarecord
  * @source       https://github.com/zeretkk/zSquareCord-theme/blob/master/src/style.css
  * @invite       FgHY754
@@ -10,3 +10,16 @@
  */
 @import "https://zeretkk.github.io/zSquareCord-theme/src/style.css";
 
+/* 
+
+
+███████╗ ██████╗ ██╗   ██╗ █████╗ ██████╗ ███████╗ ██████╗ ██████╗ ██████╗ ██████╗ 
+██╔════╝██╔═══██╗██║   ██║██╔══██╗██╔══██╗██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔══██╗
+███████╗██║   ██║██║   ██║███████║██████╔╝█████╗  ██║     ██║   ██║██████╔╝██║  ██║
+╚════██║██║▄▄ ██║██║   ██║██╔══██║██╔══██╗██╔══╝  ██║     ██║   ██║██╔══██╗██║  ██║
+███████║╚██████╔╝╚██████╔╝██║  ██║██║  ██║███████╗╚██████╗╚██████╔╝██║  ██║██████╔╝
+╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ 
+                                                                                   
+
+
+*/
