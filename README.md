@@ -1,8 +1,8 @@
 # SquareCord Discord theme
-This Discord them was designed by crazy square lover.
+Simple Discord theme was designed by crazy square lover, for Betted Discord with love :heart:
 
 
-## Totaly Squared Discord them :black_large_square:
+## Totaly Squared :black_large_square: Discord them 
 
 
-![Preview](https://z-sector.icu/ds/discord-preview4.png "preview-screenshot")
+![Preview](https://z-sector.icu/ds/discord-preview5.png "preview-screenshot")
